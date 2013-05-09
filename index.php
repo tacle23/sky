@@ -37,13 +37,13 @@
         <div class="main">
         <iframe src=""  frameborder="0" scrolling="no" style="border: 0pt none; display: block; background:url(channel/common/imgs/bg_agentbot.jpg) no-repeat center top;" allowtransparency="true"></iframe>
         </div>
-        <script type="text/javascript" src="http://demo.agentbot.net/sky-directtalk/channel/widget/overlay.js?x=1"></script>
-        <link rel="stylesheet" type="text/css" href="http://demo.agentbot.net/sky-directtalk/channel/widget/overlay.css?x=1" />
+        <script type="text/javascript" src="http://sky.agentbot.net/channel/widget/overlay.js?x=1"></script>
+        <link rel="stylesheet" type="text/css" href="http://sky.agentbot.net/channel/widget/overlay.css?x=1" />
         <script type="text/javascript">
             if (typeof(AgentBotBox) !== "undefined") {
                 AgentBotBox.init({
-                    url:       "http://demo.agentbot.net/sky-directtalk/channel/widget",
-                    assetHost: "http://demo.agentbot.net/sky-directtalk/channel/common",
+                    url:       "http://sky.agentbot.net/channel/widget",
+                    assetHost: "http://sky.agentbot.net/channel/common",
                     tabText: "Sky Directtalk"
                 });
             }
