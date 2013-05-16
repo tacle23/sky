@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title>Sky Directtalk</title>
+        <title>Sky</title>
         <style type="text/css">
         <!--
         html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, center, u, i {
@@ -35,29 +35,18 @@
 
     <body>
         <div class="main">
-        <iframe src=""  frameborder="0" scrolling="no" style="border: 0pt none; display: block; background:url(channel/common/imgs/bg_agentbot.jpg) no-repeat center top;" allowtransparency="true"></iframe>
+        
         </div>
-        <script type="text/javascript" src="http://sky.agentbot.net/channel/widget/overlay.js?x=1"></script>
-        <link rel="stylesheet" type="text/css" href="http://sky.agentbot.net/channel/widget/overlay.css?x=1" />
-        <script type="text/javascript">
-            if (typeof(AgentBotBox) !== "undefined") {
-                AgentBotBox.init({
-                    url:       "http://sky.agentbot.net/channel/widget",
-                    assetHost: "http://sky.agentbot.net/channel/common",
-                    tabText: "Sky Directtalk"
-                });
-            }
+        <script language="JavaScript" type="text/javascript">
+        function popup (pagina) {
+                var w = 458;
+                var sw = screen.availWidth - w;		
+                var opciones="toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width="+w+",height=601,top=0,left="+sw;
+                window.open(pagina,"",opciones);
+        }
+        /*popup('http://192.168.0.3/TestDirecttalk/Agent/desarrollo/channel/widget/box.php');*/
+        popup('http://sky.agentbot.net/channel/widget/box.php');
         </script>
-		<!--script type="text/javascript" src="http://192.168.0.3/SkyDirecttalk/Agent/desarrollo/channel/widget/overlay.js?x=1"></script>
-        <link rel="stylesheet" type="text/css" href="http://192.168.0.3/SkyDirecttalk/Agent/desarrollo/channel/widget/overlay.css?x=1" />
-        <script type="text/javascript">
-            if (typeof(AgentBotBox) !== "undefined") {
-                AgentBotBox.init({
-                    url:       "http://192.168.0.3/SkyDirecttalk/Agent/desarrollo/channel/widget",
-                    assetHost: "http://192.168.0.3/SkyDirecttalk/Agent/desarrollo/channel/common",
-                    tabText: "SkyDirecttalk"
-                });
-            }
-        </script---->
+        
     </body>
 </html>

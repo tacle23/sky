@@ -8,7 +8,7 @@ caption, th, td {font-weight: normal; text-align: left;}
 blockquote:before, blockquote:after, q:before, q:after {content: "";}
 blockquote, q {quotes: "" "";}
 /**************************************** GENERAL ****************************************/
-html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:13px;}
+html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:13px; overflow: hidden;}
 #wrapper{
         width:457px;
         padding-top:0;
@@ -47,7 +47,7 @@ html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:1
 	  #address{ display:none; border:0; resize:none; width:100%; height:100%; background:none; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:11px;}
 	#solapa_mapa #address{display:block !important; width:299px; font-size:12px; color:#666; padding:2px 2px 2px 5px; border:1px solid #B4B4B4; height:26px; background-color:#FFF;}
 	  
-	#loading_chat{position:absolute; display:none; top:555px; left:20px; width:40px; height:7px;}
+	#loading_chat{position:absolute; display:none; top:555px; left:20px; text-shadow: 1px 1px 0 #333333; width: 105px; height:7px;}
 	#btn_enviar{width:84px; height:79px; overflow:hidden; display:block; background:url(../imgs/btn_enviar.png) no-repeat 0px 0px; text-indent:-9999px; position:absolute; top:466px; right:16px;}
     /*.preguntas{display:block; padding:18px 0 11px 0;}
 		.preguntas a{color:#FFF; text-decoration:none;}
@@ -57,8 +57,10 @@ html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:1
 				
 				
 /**************************************** FOOTER ****************************************/
-#footer{height:30px; width:457px; background:url(../imgs/footer.jpg) repeat-x; margin-top:13px; position:relative;}
+#footer{height:30px; width:457px; background: none repeat scroll 0 0 #CFCBCA; border-top: 1px solid #FFFFFF; margin-top:10px; position:relative;}
 	.dtagentbot{position:absolute; top:7px; right:21px;}
+        .atendimento{ display: none; margin: 3px 15px; float: left;}
+        .sair{ display: block; margin: 3px 0px 0px 15px; float: left;}
 
 
 /************************ SOLAPA PREGUNTAS FRECUENTES *************************/
@@ -97,7 +99,7 @@ html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:1
                 }
 #solapa_mapa .centros{font-size:10px; color:#777777;}
     #solapa_mapa .centros h3{font-size:10px; color:#444444; font-weight:bold; display:block; border-bottom:1px solid #e2e2e2; padding:0 0 5px; margin:0;}
-    #solapa_mapa .centros .br{padding:0; margin:0; display block; height:10px; width:100%;}
+    #solapa_mapa .centros .br{padding:0; margin:0; display: block; height:10px; width:100%;}
 	
 	.llamada{width:400px; font-size:11px; color:#CCC6E1; padding:5px 7px 0 7px;}
 	
@@ -122,37 +124,38 @@ html, body{font-family: Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:1
 
 
 /*********************** SOLAPA CHAT ***********************/
-#solapa_chat{width:100%; height:481px; display:none;}
+#solapa_chat{width:100%; height:535px; display:none;}
 #solapa_chat #loadingChat{ position:absolute; width:287px;}
+#solapa_chat #formChatHuman{ display:none}
 
 
 
 /************************ FEEDBACK *************************/
-/*
+
 .calificar-respuesta{ display:block; text-align:left; position:relative; height:27px; margin-bottom:-15px; clear:both;}
-	.calificar-respuesta em.thanks{ position:absolute; font-weight:bold; color:#903; font-size:10px;}
+	.calificar-respuesta em.thanks{ font-weight:bold; color:#903; font-size:10px; float: right;}
 	#box-dialogo .calificar-respuesta a {font-size: 9px; color: #A1A1A1; font-weight: bold}
 		.megusta, .nogusta{float:right; text-indent:-9999px; position:relative; text-align:left !important;}
-		.megusta a{background:url(../imgs/m_arriba.jpg) no-repeat; display:block;  width:16px; height:16px; margin:2px 0 0 0;}
+		.megusta a{background:url(../imgs/m_arriba.jpg) no-repeat; display:block;  width:12px; height:12px; margin:2px 0 0 0;}
 			.megusta a:hover{background:url(../imgs/m_arriba_h.jpg)}
-		.nogusta > a{background:url(../imgs/m_abajo.jpg) no-repeat; display:block; text-indent:-9999px; width:16px; height:16px; margin:8px 10px 0 5px;}
-			.nogusta > a:hover{background:url(../imgs/m_abajo_h.jpg)}*/
-		.nogusta_resp{background-color:#2A3382; border:1px solid #339; display:inline-block; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; padding:5px 5px 8px 2px; -moz-box-shadow:2px 2px 2px #666; -webkit-box-shadow:2px 2px 2px #666; box-shadow:2px 2px 2px #666; text-indent:0; bottom:20px; right:0px; z-index:9; position:absolute; display:none; text-align:left;}	
-			.nogusta_resp ul{width:120px; padding:0 0 0 20px;}
+		.nogusta > a{background:url(../imgs/m_abajo.jpg) no-repeat; display:block; text-indent:-9999px; width:12px; height:12px; margin:8px 10px 0 5px;}
+			.nogusta > a:hover{background:url(../imgs/m_abajo_h.jpg)}
+		.nogusta_resp{background-color:#FF7F1E; border:1px solid #FFB901; display:inline-block; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; padding:5px 5px 8px 2px; -moz-box-shadow:2px 2px 2px #666; -webkit-box-shadow:2px 2px 2px #666; box-shadow:2px 2px 2px #666; text-indent:0; bottom:20px; right:0px; z-index:9; position:absolute; display:none; text-align:left;}	
+			.nogusta_resp ul{width:125px; padding:0 0 0 20px;}
 			.nogusta_resp li{list-style-image:url(../imgs/items3.jpg); }
 				.nogusta_resp li a{color:#FFF !important; text-decoration:none !important;}
-				/*.nogusta_resp li a:hover{color:#FF9906 !important;}*/
+				.nogusta_resp li a:hover{color:#333 !important; background-color: #FFB901 !important}
 
 		
 
 
-
+/*
 .calificar-respuesta{display:block; text-align:right; font-size:9px; color:#333333; margin:5px 0 10px 0;}
-	.calificar-respuesta > span{padding:0px 2px 1px 2px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; background-color:#2A3382; width:20px; height:14px; margin-left:2px; position:relative;}
-	.calificar-respuesta span a{padding:0px 2px 1px 2px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; color:#FFF !important; text-decoration:none !important; width:20px; height:14px;}
-	.calificar-respuesta span a:hover{background-color:#575C7F; color:#FFF;}
+	.calificar-respuesta > span{padding:0px 2px 1px 2px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; background-color:#FFB901; width:20px; height:14px; margin-left:2px; position:relative;}
+	.calificar-respuesta span a{padding:0px 2px 1px 2px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; color:#FFF !important; text-decoration:none !important; width:12px; height:12px;}
+	.calificar-respuesta span a:hover{background-color:#FF9000; color:#FFF;}
 
-
+*/
 
 
 /************************ ALERT DEMO *************************/
