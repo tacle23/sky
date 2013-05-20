@@ -157,7 +157,7 @@ function send() {
             success: function(msg) {
                 $('#footer .atendimento').css('display','inline-block');
                 $('#tdialogo').val($('#tdialogo').val() + '\n\r' + $('<div>Você diz: ' + text + '</div>').text());
-                $('#tdialogo').val($('#tdialogo').val() + '\n\r' + $('<div>Netshoes diz: ' + msg.answer + '</div>').text() + '\n\r' + '--------------------------');
+                $('#tdialogo').val($('#tdialogo').val() + '\n\r' + $('<div>Sky diz: ' + msg.answer + '</div>').text() + '\n\r' + '--------------------------');
                 
                 var answerID = msg.answerID;
                 var hasPattern = msg.hasPattern;

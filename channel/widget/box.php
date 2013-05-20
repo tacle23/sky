@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="../common/css/base.css?x=1" rel="stylesheet" media="all" type="text/css" />
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-        <script type="text/javascript" src="../common/js/function.js?x=1"></script>
+        <script type="text/javascript" src="../common/js/function.js?x=2"></script>
 
         <title>Sky</title>
     </head>
