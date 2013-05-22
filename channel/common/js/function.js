@@ -28,7 +28,7 @@ google.setOnLoadCallback(function() {
 
 
     /* SALUDO INICIAL */
-    var answer = 'Olá! Sou agente Virtual da SKY, uma novidade em nosso atendimento! Vou tentar esclarecer suas dúvidas e a qualquer momento você pode acessar o nosso chat. Combinado? Posso ajudar de que forma?';
+    var answer = 'Olá! Sou Agente Virtual da SKY, uma novidade em nosso atendimento! Estou aqui para esclarecer suas dúvidas, mas a qualquer momento você pode acessar o nosso chat. Combinado? Em que posso ajudar?';
     var response = '<span class="respuesta_bot"><strong class="userName">SKY diz:</strong> <span>' + answer + '</span></span>';
     $("#dialogo").append(response);
 
